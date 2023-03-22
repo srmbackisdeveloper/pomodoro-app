@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useContext, useEffect } from 'react';
+import Pomodoro from './components/Pomodoro';
+import './css/App.css';
+import { SettingContext } from './context/SettingsContext';
+import RoundedButton from './components/RoundedButton';
 
 function App() {
+  const { executing } = useContext(SettingContext);
+  const [bgColor, setBgColor] = useState(executing.color);
+
+  useEffect(() => {
+    setBgColor(executing.color);
+  }, [executing]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main style={{background: bgColor}}>
+      <div className='container'>
+        <Pomodoro />
+      </div>
+
+      <RoundedButton />
+    </main>
   );
 }
 

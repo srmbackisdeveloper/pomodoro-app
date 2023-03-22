@@ -1,0 +1,15 @@
+Updates:
+version 1.0:
+    1. Pomodoro functionalities (DONE)
+    2. Styling
+
+version 1.1:
+    1. Make a counter of how many times user "finished" circle of Work
+    2. Add laps
+    3. Add sound when finished (unique nice sound for each mode)
+
+    4. Change document title (for each mode)
+
+version 1.2:
+    1. Add side bar
+    2. Add ToDo list (with counter of todos)

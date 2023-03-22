@@ -1,0 +1,198 @@
+* {
+    list-style: none;
+}
+
+
+/* timer css */
+.timer {
+    color: white;
+    font-size: 30px;
+}
+
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    transform: scale(1.25);
+}
+
+.pomodoro-items {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: block;
+    margin: 25px auto;
+    padding: 25px 0;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.setpomodoro {
+    text-align: center;
+}
+
+.setpomodoro input {
+    text-align: center;
+    width: 100px;
+    padding: 20px 40px;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0 5px 25px 5px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0 12px;
+    background: white;
+}
+
+.setpomodoro .labels label {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    background: white;
+    margin: 25px 5px 0 5px;
+    padding: 10px 40px;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+.new-timer-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.new-timer-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.new-timer-btn:active {
+    transform: translateY(1px);
+}
+
+img {
+    display: block;
+    margin: 25px auto;
+    width: 500px;
+    border-radius: 25px;
+}
+
+.play-btn {
+    margin-right: 3px;
+}
+
+.pause-btn {
+    margin-left: 3px;
+}
+
+.modes ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modes li button {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 300;
+    width: 150px;
+    margin: 0 5px 25px 5px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.modes .active-mode {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1433px)  {
+    .setpomodoro input {
+        width: 75px;
+    }
+    
+    .setpomodoro .labels label {
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 1237px)  {
+    .setpomodoro input {
+        width: 50px;
+    }
+    
+    .setpomodoro .labels label {
+        width: 50px;
+    }
+
+    .pomodoro-items {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .setpomodoro input {
+        width: 35px;
+        font-size: 30px;
+    }
+    
+    .setpomodoro .labels label {
+        width: 35px;
+        font-size: 12px;
+    }
+
+    img {
+        width: 400px;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width: 430px)  {
+    .setpomodoro input {
+        width: 25px;
+        font-size: 20px;
+    }
+    
+    .setpomodoro .labels label {
+        width: 25px;
+        font-size: 10px;
+    }
+
+    img {
+        width: 300px;
+        border-radius: 10px;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+@media only screen and (max-width: 715px)  {
+    .pomodoro-items {
+        width: 450px;
+    }
+
+    .modes li button {
+        font-size: 14px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .pomodoro-items {
+        width: 350px;
+    }
+
+    .modes li button {
+        font-size: 14px;
+        width: 100px;
+    }
+}
